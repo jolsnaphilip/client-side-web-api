@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- LEFT PANEL -->
+  <div class="left">
+    <h1>🌤 Weather Dashboard</h1>
+
+    <input type="text" id="cityInput" placeholder="Type city name">
+
+    <select id="cityDropdown" onchange="selectCity()">
+      <option value="">Quick cities</option>
+      <option value="Kochi">Kochi</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Delhi">Delhi</option>
+      <option value="London">London</option>
+      <option value="Tokyo">Tokyo</option>
+      <option value="Dubai">Dubai</option>
+    </select>
+
+    <button onclick="getWeather()">Get Weather</button>
+
+    <h3>Recent</h3>
+    <div id="history" class="history"></div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right">
+    <div id="weatherBox" class="weather-card">
+      <p class="hint">Search a city to see weather</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
