@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  height: 100vh;
+  color: white;
+}
+
+/* MAIN LAYOUT */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT PANEL */
+.left {
+  width: 300px;
+  padding: 25px;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+}
+
+.left h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00d4ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* HISTORY */
+.history {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.history div {
+  background: rgba(255,255,255,0.2);
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* RIGHT PANEL */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WEATHER CARD */
+.weather-card {
+  width: 320px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.weather-card h2 {
+  margin-bottom: 10px;
+}
+
+.hint {
+  opacity: 0.7;
+}
